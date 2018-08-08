@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Install AWSCLI Bundle
 cd ~/
 mkdir AWSCliBundle
