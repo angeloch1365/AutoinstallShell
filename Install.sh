@@ -41,4 +41,4 @@ unzip -o terraform_0.11.7_linux_amd64.zip
 sudo yum install git -y
 
 #Install Ansible
-sudo amazon-linux-extras install ansible2
+sudo amazon-linux-extras install ansible2 -y
