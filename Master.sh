@@ -2,8 +2,8 @@
 
 #Install AWSCLI Bundle
 cd ~/
-mkdir AWSCliBundle
-cd AWSCliBundle
+mkdir /var/jenkins/AWSCliBundle
+cd /var/jenkins/AWSCliBundle
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
@@ -16,8 +16,8 @@ sudo /usr/sbin/alternatives --set javac /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bi
 sudo yum remove java-1.7 || true \n
 
 #Install Jenkins
-sudo mkdir jenkinsinstall
-cd jenkinsinstall
+sudo mkdir /var/jenkins/jenkinsinstall
+cd /var/jenkins/jenkinsinstall
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum install jenkins -y
@@ -25,15 +25,15 @@ sudo service jenkins start
 
 #Install Packer
 cd ~/
-mkdir packer
-cd packer
+mkdir /var/jenkins/packer
+cd /var/jenkins/packer
 wget https://releases.hashicorp.com/packer/1.2.5/packer_1.2.5_linux_amd64.zip
 unzip -o packer_1.2.5_linux_amd64.zip
 
 #Install Terraform
 cd ~/
-mkdir terraform
-cd terraform
+mkdir /var/jenkins/terraform
+cd /var/jenkins/terraform
 wget https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip
 unzip -o terraform_0.11.7_linux_amd64.zip
 
