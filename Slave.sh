@@ -15,6 +15,9 @@ sudo /usr/sbin/alternatives --set java /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bin
 sudo /usr/sbin/alternatives --set javac /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bin/javac || true \n
 sudo yum remove java-1.7 || true \n
 
+#Create Jenkins Dir
+mkdir /var/jenkins
+
 #Install Packer
 cd ~/
 mkdir /var/jenkins/packer
